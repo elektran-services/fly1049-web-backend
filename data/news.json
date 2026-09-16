@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Fly 104.9 FM Launches New Morning Show",
+    "excerpt": "Get ready for an exciting new way to start your day! Our brand new morning show brings you the best music and entertainment.",
+    "content": "Fly 104.9 FM is thrilled to announce the launch of our brand new morning show! Starting next week, wake up to the best music, entertainment news, and engaging discussions that will make your mornings brighter.",
+    "category": "station-news",
+    "author": "Fly 104.9 Team",
+    "publishedDate": "2026-09-01T08:00:00.000Z",
+    "imageUrl": "",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Erijiyan Music Festival 2026 Announced",
+    "excerpt": "The biggest music festival in Ekiti State is coming! Get ready for three days of non-stop entertainment.",
+    "content": "Mark your calendars! The Erijiyan Music Festival 2026 is set to be the biggest entertainment event of the year. Featuring top Nigerian artists and local talents.",
+    "category": "events",
+    "author": "Events Team",
+    "publishedDate": "2026-08-28T10:00:00.000Z",
+    "imageUrl": "",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Two of the world’s top AI chief executives publicly agree on slowing AI development",
+    "excerpt": "Dario Amodei said rapidly advancing AI systems are outpacing safeguards and is calling for new measures to “slow the pace” toward more powerful systems.",
+    "content": "The CEOs of two of the world’s leading AI companies are publicly agreeing that the race to build increasingly powerful AI systems needs to be slowed, continuing this week’s cascade of warnings from researchers working on the technology.\n\nDario Amodei, the CEO of Anthropic, maker of the Claude chatbot, said in essay published Saturday that AI companies should deliberately “slow the pace” at which they improve their models, arguing that AI advances are moving faster than researchers’ ability to understand and control them.\n\n“We must slow the pace at which we improve the capabilities of AI models,” Amodei wrote. “Progress will still seem fast, and we must make wise use of the time we gain.”\n\nHours later, OpenAI CEO Sam Altman endorsed the idea and said his company would adopt one of Amodei’s proposed safeguards.\n\n“I agree with Dario that we need to pace the frontier,” Altman wrote on X, saying the issue had been a major topic of discussion at OpenAI in recent weeks.",
+    "category": "news",
+    "author": "fly 104.9 fm Team",
+    "publishedDate": "2026-09-13T13:29:20.223Z",
+    "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_avif,q_auto:best/rockcms/2026-08/260827-Dario-Amodei-vsb-2239-f8b195.jpg",
+    "featured": true
+  }
+]

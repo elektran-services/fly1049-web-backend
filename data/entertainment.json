@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 Afrobeats Hits of the Month",
+    "excerpt": "Discover the hottest Afrobeats tracks that are dominating the airwaves this month!",
+    "content": "From Burna Boy to Wizkid, these are the tracks that have been setting dance floors on fire. Our countdown features the most requested songs by our listeners.",
+    "category": "music",
+    "author": "Fly 104.9 Team",
+    "publishedDate": "2026-09-01T08:00:00.000Z",
+    "imageUrl": "",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Celebrity Interview: Behind the Scenes",
+    "excerpt": "Exclusive interview with the hottest artists in Nigerian music industry.",
+    "content": "Get an inside look at the lives of your favorite artists. We sat down with some of the biggest names in the industry to talk about their journey and upcoming projects.",
+    "category": "interviews",
+    "author": "Media Team",
+    "publishedDate": "2026-08-30T12:00:00.000Z",
+    "imageUrl": "",
+    "featured": false
+  }
+]

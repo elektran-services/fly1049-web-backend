@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Fly 104.9 FM</title>
+  <link rel="stylesheet" href="admin.css?v=2">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <h1>Fly 104.9 FM</h1>
+    <p class="muted">Admin Portal</p>
+    <form id="loginForm">
+      <label for="password">Admin password</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password">
+      <button type="submit">Sign in</button>
+      <p id="loginError" class="error" hidden></p>
+    </form>
+  </main>
+  <script src="admin.js"></script>
+  <script>
+    AdminAuth.requireGuest();
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('loginError');
+      errorEl.hidden = true;
+      try {
+        await AdminAPI.login(password);
+        window.location.href = 'index.html';
+      } catch (err) {
+        errorEl.textContent = err.message || 'Login failed';
+        errorEl.hidden = false;
+      }
+    });
+  </script>
+</body>
+</html>

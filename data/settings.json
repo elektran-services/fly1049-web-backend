@@ -1,0 +1,34 @@
+{
+  "addressLines": [
+    "Along Aramoko Road",
+    "Erijiyan, Ekiti State",
+    "Nigeria"
+  ],
+  "studioPhone": "09064271740",
+  "whatsapp": [
+    "09064271740",
+    "08034349139"
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/FLY1049FM/",
+    "instagram": "https://www.instagram.com/fly104.9fm/",
+    "youtube": "https://www.youtube.com/@Fly104.9fm"
+  },
+  "heroPhrases": [
+    "Fly 104.9 FM",
+    "Ekiti's Hottest Radio Station",
+    "Non-Stop Entertainment",
+    "Your Daily Vibes",
+    "Music That Moves You",
+    "Ekiti's Live Sound",
+    "Where the Party Never Stops",
+    "Home of Afrobeats & Vibes",
+    "Live Shows, Real Energy",
+    "Your Voice on 104.9",
+    "Broadcasting Love & Music"
+  ],
+  "streams": {
+    "audio": "https://azstream.elektranbroadcast.com/listen/fly1049/radio.mp3",
+    "video": "https://ngvid.elektranbroadcast.com/hls/fly1049/mystream.m3u8"
+  }
+}

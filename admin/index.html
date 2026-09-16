@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Fly 104.9 FM</title>
+  <link rel="stylesheet" href="admin.css?v=3">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Fly 104.9 Admin</h2>
+      <nav>
+        <button type="button" data-panel="posts" class="active">Posts</button>
+        <button type="button" data-panel="station">Station &amp; contact</button>
+        <button type="button" data-panel="hero">Hero text</button>
+        <button type="button" data-panel="streams">Streams</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h1 style="margin:0;font-size:1.4rem;">Content Manager</h1>
+          <p class="muted" style="margin:0.25rem 0 0;">Updates appear on the public site via the API.</p>
+        </div>
+        <button type="button" id="logoutBtn" class="secondary">Logout</button>
+      </div>
+
+      <!-- Unified Posts -->
+      <section class="panel active" id="panel-posts">
+        <div class="card">
+          <h3 id="postFormTitle">Add post</h3>
+          <form id="postForm">
+            <label for="postSection">Show on frontend</label>
+            <select id="postSection" required>
+              <option value="news">News section</option>
+              <option value="entertainment">Entertainment section</option>
+            </select>
+
+            <label for="postTitle">Title</label>
+            <input id="postTitle" required>
+
+            <label for="postExcerpt">Excerpt</label>
+            <textarea id="postExcerpt"></textarea>
+
+            <label for="postContent">Content</label>
+            <textarea id="postContent"></textarea>
+
+            <label for="postCategory">Category</label>
+            <input id="postCategory" placeholder="e.g. station-news, music, events">
+
+            <label for="postAuthor">Author</label>
+            <input id="postAuthor" placeholder="Fly 104.9 Team">
+
+            <label for="postImage">Upload image</label>
+            <input id="postImage" type="file" accept="image/*">
+            <div id="postImagePreview" class="image-preview" hidden></div>
+
+            <label for="postImageUrl">Or image URL</label>
+            <input id="postImageUrl" placeholder="https://... or leave blank if uploading">
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="postFeatured">
+              <label for="postFeatured" style="margin:0;">Featured</label>
+            </div>
+
+            <div class="row" style="margin-top:1rem;">
+              <button type="submit">Save post</button>
+              <button type="button" id="postReset" class="secondary">Clear</button>
+            </div>
+            <p id="postStatus"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>All posts</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Post</th>
+                <th>Section</th>
+                <th>Featured</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="postsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Station -->
+      <section class="panel" id="panel-station">
+        <div class="card">
+          <h3>Station &amp; contact</h3>
+          <form id="stationForm">
+            <label for="addressLines">Address (one line per row)</label>
+            <textarea id="addressLines"></textarea>
+            <label for="studioPhone">Studio phone</label>
+            <input id="studioPhone">
+            <label for="whatsappNumbers">WhatsApp numbers (one per line)</label>
+            <textarea id="whatsappNumbers"></textarea>
+            <label for="socialFacebook">Facebook URL</label>
+            <input id="socialFacebook">
+            <label for="socialInstagram">Instagram URL</label>
+            <input id="socialInstagram">
+            <label for="socialYoutube">YouTube URL</label>
+            <input id="socialYoutube">
+            <div class="row" style="margin-top:1rem;">
+              <button type="submit">Save station info</button>
+            </div>
+            <p id="stationStatus"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Hero -->
+      <section class="panel" id="panel-hero">
+        <div class="card">
+          <h3>Hero rotating phrases</h3>
+          <form id="heroForm">
+            <div id="phraseList" class="phrase-list"></div>
+            <div class="row" style="margin-top:1rem;">
+              <button type="button" id="addPhraseBtn" class="secondary">Add phrase</button>
+              <button type="submit">Save phrases</button>
+            </div>
+            <p id="heroStatus"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Streams -->
+      <section class="panel" id="panel-streams">
+        <div class="card">
+          <h3>Stream URLs</h3>
+          <form id="streamsForm">
+            <label for="streamAudio">Audio stream URL</label>
+            <input id="streamAudio">
+            <label for="streamVideo">Video stream URL (HLS)</label>
+            <input id="streamVideo">
+            <div class="row" style="margin-top:1rem;">
+              <button type="submit">Save streams</button>
+            </div>
+            <p id="streamsStatus"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js?v=3"></script>
+  <script>
+    AdminApp.init();
+  </script>
+</body>
+</html>

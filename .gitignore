@@ -1,0 +1,4 @@
+uploads/
+*.tmp
+.env
+node_modules/
